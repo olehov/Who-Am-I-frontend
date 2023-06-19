@@ -80,5 +80,5 @@
     "jest": "^28.1.1",
     "prettier": "^2.6.2"
   },
-  "proxy": "https://who-am-i-group1.herokuapp.com/api/v1"
+  "proxy": "https://who-am-i-group1.herokuapp.com"
 }
