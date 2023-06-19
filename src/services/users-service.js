@@ -3,7 +3,7 @@ import axios from 'axios';
 async function registrationUser(username, email, password) {
   return axios({
     method: 'post',
-    url: '/api/v1/users',
+    url: '/users',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -18,7 +18,7 @@ async function registrationUser(username, email, password) {
 async function authorisationUser(email, password) {
   return axios({
     method: 'post',
-    url: '/api/v1/users/authorisation',
+    url: '/users/authorisation',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -32,7 +32,7 @@ async function authorisationUser(email, password) {
 async function sendEmail(email) {
   return axios({
     method: 'post',
-    url: '/api/v1/users/email',
+    url: '/users/email',
     data: {
       email: email,
     },
@@ -41,7 +41,7 @@ async function sendEmail(email) {
 async function sendPass(oobCode, password) {
   return axios({
     method: 'post',
-    url: '/api/v1/users/password',
+    url: '/users/password',
     data: {
       oobCode,
       password,
@@ -51,7 +51,7 @@ async function sendPass(oobCode, password) {
 async function updateUser(username, idToken, password) {
   return axios({
     method: 'post',
-    url: '/api/v1/users/update',
+    url: '/users/update',
     headers: {
       'Content-Type': 'application/json',
     },
