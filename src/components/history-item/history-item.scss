@@ -1,0 +1,97 @@
+@import '../../styles/colors.scss';
+
+.history-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 24px;
+  background-color: $primary-background-blue;
+  border-radius: 16px;
+
+  &:not(:nth-last-child(2)) {
+    opacity: 50%;
+  }
+
+  &__question {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $font-black;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 80px;
+    height: auto;
+    background-color: $btn-green;
+    border-radius: 200px;
+
+    &.guess {
+      background: $font-yellow;
+    }
+
+    .my-guess {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 8px;
+      padding: 8px 16px;
+      gap: 8px;
+      background: $modals-background;
+      border-radius: 200px;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 0 8px;
+    }
+  }
+
+  &__avatar {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  .avatar01 {
+    background-image: url(../../assets/avatars/avatar01.png);
+  }
+  .avatar02 {
+    background-image: url(../../assets/avatars/avatar02.png);
+  }
+  .avatar03 {
+    background-image: url(../../assets/avatars/avatar03.png);
+  }
+  .avatar04 {
+    background-image: url(../../assets/avatars/avatar04.png);
+  }
+
+  &__icons-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .history-item {
+    gap: 16px;
+    padding: 16px;
+
+    &___question {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 8px;
+      min-height: auto;
+    }
+  }
+}

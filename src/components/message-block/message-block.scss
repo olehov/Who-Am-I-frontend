@@ -1,0 +1,56 @@
+@import '../../styles/colors';
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  height: 56px;
+  border-radius: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  gap: 16px;
+}
+
+.response-yes {
+  background-color: $btn-green;
+  color: $font-black;
+}
+
+.response-no {
+  background-color: $btn-pink;
+  color: $font-black;
+}
+
+.waiting-yes {
+  color: $btn-green;
+  background: $primary-background-blue;
+}
+
+.waiting-no {
+  color: $btn-pink;
+  background: $primary-background-blue;
+}
+
+.icon-waiting-yes {
+  height: 19.2px;
+  width: 19.2px;
+  background-image: url('../../assets/icons/check.svg');
+  filter: invert(83%) sepia(65%) saturate(3593%) hue-rotate(89deg)
+    brightness(97%) contrast(102%);
+  background-size: 19.2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-waiting-no {
+  height: 19.2px;
+  width: 19.2px;
+  background-image: url('../../assets/icons/cross.svg');
+  filter: invert(57%) sepia(65%) saturate(3655%) hue-rotate(299deg)
+    brightness(104%) contrast(101%);
+  background-size: 19.2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,30 @@
+@mixin message-screen {
+  background-color: $primary-background-blue;
+  color: $main-font-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-normal {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin font-big {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+@mixin lobby-content-wrapper {
+  background: $secondary-background-blue;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 1280px;
+  padding: 24px;
+  border-radius: 16px;
+}

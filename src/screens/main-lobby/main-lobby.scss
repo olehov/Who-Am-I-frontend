@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+
+.main-lobby {
+  @include lobby-content-wrapper;
+  margin-top: 20px;
+  overflow: auto;
+
+  .table-header {
+    font-weight: 700;
+    padding-bottom: 16px;
+
+    .btn-with-fields {
+      width: 184px;
+      padding: 16px 32px;
+    }
+  }
+
+  .players-number {
+    text-align: left;
+  }
+}

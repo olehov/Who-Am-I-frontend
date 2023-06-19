@@ -1,0 +1,12 @@
+.answer-row {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+
+  .btn-half,
+  .btn-third {
+    height: 56px;
+  }
+}

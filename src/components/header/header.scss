@@ -1,0 +1,39 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins';
+
+.game-header {
+  width: 1270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: $modals-background;
+  margin: 31px 0 24px;
+
+  &__leave-btn-wrapper {
+    width: 184px;
+    height: 51px;
+  }
+
+  .create-btn-wrapper {
+    width: 230px;
+  }
+
+  &__timer-wrapper {
+    width: 177px;
+  }
+
+  &__title {
+    @include font-big;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .game-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

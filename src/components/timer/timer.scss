@@ -1,0 +1,41 @@
+@import '../../styles/colors';
+
+.timer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__start {
+    margin: 0px;
+    max-height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__time {
+    font-weight: 900;
+    font-size: 56px;
+    max-height: 58px;
+    max-width: 177px;
+  }
+
+  .time-small {
+    font-size: 24px;
+  }
+
+  .in-lobby {
+    text-align: end;
+    margin-bottom: 15px;
+  }
+
+  .v-small {
+    display: none;
+  }
+
+  .colored {
+    color: $btn-pink;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

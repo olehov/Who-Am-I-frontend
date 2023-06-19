@@ -1,0 +1,11 @@
+@import '../../styles/colors.scss';
+
+.lobby-screen__content_wrapper {
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 32px;
+  overflow: hidden;
+}

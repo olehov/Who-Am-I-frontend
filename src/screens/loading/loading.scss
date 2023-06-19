@@ -1,0 +1,42 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins';
+
+@mixin waiting-msg {
+  max-width: 700px;
+  max-height: 39px;
+  font-weight: 900;
+  font-size: 24px;
+  margin-top: 3px;
+}
+
+.loading {
+  background-color: $primary-background-blue;
+
+  &__wrapper {
+    @include message-screen;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  &__waiting-message {
+    max-width: 900px;
+    max-height: 39px;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 3px;
+    color: $font-yellow;
+  }
+
+  &__queue-number {
+    font-weight: 900;
+    font-size: 24px;
+    color: $btn-green;
+  }
+
+  &__button-wrappper {
+    width: 100%;
+    max-width: 628px;
+    height: 67px;
+    margin-top: 32px;
+  }
+}

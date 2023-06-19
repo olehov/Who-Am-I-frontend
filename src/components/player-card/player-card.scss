@@ -1,0 +1,97 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins';
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $main-font-color;
+  font-family: 'Inter';
+
+  &__card {
+    display: flex;
+    align-items: center;
+
+    &.in-users-container {
+      max-width: 510px;
+    }
+  }
+
+  &__card-name {
+    @include font-normal;
+    margin-right: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__you-label,
+  &__assigned-character {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    height: 51px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 25px;
+  }
+
+  &__you-label {
+    background-color: $btn-green;
+    color: $font-black;
+    margin-right: 16px;
+    text-transform: uppercase;
+  }
+
+  &__assigned-character {
+    background-color: $modals-background;
+    color: $secondary-background-blue;
+    text-transform: uppercase;
+
+    &_active {
+      background-color: $btn-green;
+      color: $font-black;
+    }
+  }
+
+  &__card-avatar {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &_active {
+      border: 8px solid $btn-green;
+    }
+  }
+
+  &__status {
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+  }
+}
+
+.avatar01 {
+  background-image: url(../../assets/avatars/avatar01.png);
+}
+.avatar02 {
+  background-image: url(../../assets/avatars/avatar02.png);
+}
+.avatar03 {
+  background-image: url(../../assets/avatars/avatar03.png);
+}
+.avatar04 {
+  background-image: url(../../assets/avatars/avatar04.png);
+}
+
+.unsure {
+  background-image: url(../../assets/svg/question-mark.svg);
+}
+.yes {
+  background-image: url(../../assets/svg/check.svg);
+}
+.no {
+  background-image: url(../../assets/svg/x.svg);
+}

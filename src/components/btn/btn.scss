@@ -1,0 +1,130 @@
+@import '../../styles/colors.scss';
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $font-black;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 67px;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  background: $btn-lightgray;
+  color: $font-gray;
+}
+
+.btn:disabled:hover {
+  filter: brightness(100%);
+  cursor: default;
+}
+
+.btn:hover {
+  filter: brightness(140%);
+}
+
+.btn-green-solid {
+  background: $btn-green;
+  width: 100%;
+}
+
+.btn-pink-solid {
+  background: $btn-pink;
+  width: 100%;
+}
+
+.btn-yellow-solid {
+  background: $btn-yellow;
+  width: 100%;
+}
+
+.btn-lightgray-outline {
+  background: $btn-lightgray;
+  border: 4px solid $font-black;
+}
+
+.btn-blue-outline {
+  border: 4px solid $main-font-color;
+  background-color: $primary-background-blue;
+  color: $main-font-color;
+  font-weight: 900;
+  font-size: 24px;
+  width: 290px;
+}
+
+.btn-blue-outline-small {
+  border: 4px solid $main-font-color;
+  background-color: $primary-background-blue;
+  color: $main-font-color;
+}
+
+.btn-pink-outline {
+  border: 4px solid $btn-pink;
+  background-color: $primary-background-blue;
+  color: $btn-pink;
+  font-weight: 900;
+  font-size: 24px;
+  width: 290px;
+}
+
+.btn-fb-blue {
+  background: $lightblue;
+  color: $main-font-color;
+  font-weight: 500;
+  text-transform: none;
+  width: 255px;
+}
+
+.btn-orange-solid {
+  background: $btn-orange;
+}
+
+.btn-rounded {
+  border-radius: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-half {
+  width: 50%;
+}
+
+.btn-third {
+  width: 33%;
+}
+
+.check-icon {
+  width: 17px;
+  height: 13px;
+  background-image: url(../../assets/svg/check-icon-btn.svg);
+}
+
+.cross-icon {
+  width: 14px;
+  height: 14px;
+  background-image: url(../../assets/svg/cross-icon-btn.svg);
+}
+
+.question-icon {
+  width: 11px;
+  height: 19px;
+  background-image: url(../../assets/svg/question-icon-btn.svg);
+}
+
+.fb {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/fb.svg);
+}
